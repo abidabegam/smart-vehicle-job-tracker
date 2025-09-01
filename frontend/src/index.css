@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+html, body, #root { height: 100%; }
+
+/* Animated gradient background used across pages */
+.animated-gradient {
+  background: linear-gradient(120deg,#3b82f6,#8b5cf6,#ec4899);
+  background-size: 200% 200%;
+  animation: gradientShift 10s ease infinite;
+}
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50%{ background-position: 100% 50%; }
+  100%{background-position: 0% 50%;}
+}
